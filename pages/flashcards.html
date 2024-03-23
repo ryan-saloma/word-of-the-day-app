@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/flashcards.css">
+</head>
+
+<body>
+    <header>
+        <navbar class="home-nav nav sticky">
+            <ul class="nav-list">
+                <li class="logo nav-item">
+                    <a href="home.html">Untitled</a>
+                </li>
+                <li title="Use flashcards to learn vocab" class="nav-item flashcards">
+                    <a href="flashcards.html">Flashcards</a>
+                </li>
+                <li title="Look at vocab lists" class="nav-item vocab-lists">
+                    <a href="lists.html">Vocab Lists</a>
+                </li>
+                <li title="Play vocab games" class="nav-item games">
+                    <a href="games.html">Games</a>
+                </li>
+                <li class="nav-item login">
+                    <button action="login.html" class="btn btn-primary">Login</a>
+                </li>
+                <li class="nav-item signup">
+                    <button action="signup.html" class="btn btn-secondary">Sign Up</a>
+                </li>
+                <button role="button" class="hamburger menu">
+                    <span class="rows"></span>
+                </button>
+            </ul>
+        </navbar>
+    </header>
+    <div class="new-flashcard-form form">
+        <form action="" method="" class="">
+            <div class="word-entry">
+                <label for="nw" class="label nw-label">Enter the word:</label>
+                <input type="text" name="nw" id="new-word">
+            </div>
+            <div class="definition-entry">
+                <label for="definition" class="definition-label label">Enter the definition:</label>
+                <textarea id="definition" name="defintion" rows="5" cols="40"></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
