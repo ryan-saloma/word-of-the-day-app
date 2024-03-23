@@ -1,58 +1,93 @@
+:root {
+    --clr-primary: #1B4079;
+    --clr-primary-hover: #2960b2;
+    --clr-secondary: #8FAD88;
+    --clr-secondary-hover: #97b790;
+    --clr-light-background: #EFEFEF;
+    --clr-dark-background: #c2c2c2;
+    --clr-300-background: #8a8a8a;
+    --radius: 7px;
+}
+
 * {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
-a {
-    text-decoration: none;
+body {
+    background: var(--clr-light-background);
 }
 
-.header-banner {
-    background: #dda25ee9;
+.nav-list {
+    background: #fff;
+    box-shadow: 0px 0px 10px var(--clr-dark-background);
+    padding: 1em 0;
+    margin: 0 0.25em;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-header .main-nav {
-    height: 50px;
-    line-height: 50px;
+.sticky {
+    position: fixed;
     width: 100%;
+    top: 0;
 }
 
-.logo {
-    color: #fff;
+.nav-item a {
     text-decoration: none;
-    display: inline-block;
-    margin-left: 2.5%;
-    width: 60%;
-    font-weight: 600;
-    height: 35px;
+    color: black;
 }
 
-/* the width should be determined by a media query */
-.logininfo {
-    width: 32%;
-    text-align: right;
-    line-height: 35px;
-    height: 35px;
-    margin: 0px;
+.nav-item {
+    margin-right: 2em;
     display: inline-block;
 }
 
-.logininfo a {
-    color: #fff;
-    padding: 0.25em 1.25em;
-    margin: 0px 10px;
-    text-align: right;
-    border-radius: 3px;
-    line-height: 25px;
+.nav-item a {
+    color: var(--clr-primary);
 }
 
-.logininfo a.login {
-    background-color: #606c38;
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 1rem;
 }
 
-.logininfo a.signup {
-    background-color: #bc6c25;
+.nav-item .btn-primary {
+    background: #fff;
+    border: 2px solid var(--clr-primary);
+    padding: 3px 5px;
+    box-sizing: border-box;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+.nav-item .btn-secondary {
+    background: #fff;
+    border: 2px solid var(--clr-secondary);
+    padding: 3px 5px;
+    box-sizing: border-box;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    margin-left: -20px;
+    margin-right: -15px;
+}
+
+.nav-item .btn:hover {
+    background: var(--clr-dark-background);
+    transition: 100ms ease-in;
+    cursor: pointer;
+}
+
+.nav-item .btn-primary:hover {
+    border-color: var(--clr-primary-hover);
+}
+
+.nav-item .btn-secondary:hover {
+    border-color: var(--clr-secondary-hover);
 }
 
 .menu.hamburger {
@@ -84,7 +119,7 @@ header .main-nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -9px;
+    margin-left: -1rem;
     width: 16px;
     margin-top: -2px;
     height: 3px;
@@ -112,33 +147,4 @@ header .main-nav {
     background-color: #000;
     content: "";
     transition: all .3s;
-}
-
-.menu.hamburger:hover {
-    background-color: #606c38;
-}
-
-.logininfo a.login:hover,
-.logininfo a.signup:hover {
-    filter: brightness(150%);
-    cursor: pointer;
-}
-
-.tabs {
-    text-align: center;
-}
-
-
-.tab {
-    height: 20px;
-    margin: 20px;
-    font-size: smaller;
-    display: inline-block;
-    line-height: 10px;
-    text-align: center;
-    width: 15%;
-}
-
-.tab a {
-    color: #606c38;
 }

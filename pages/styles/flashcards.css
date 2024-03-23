@@ -1,0 +1,53 @@
+.new-flashcard-form {
+    margin: 100px 0.25rem 0px;
+    background: var(--clr-primary);
+    border-radius: var(--radius);
+    height: 200px;
+    width: calc(100% - 0.5rem);
+}
+
+.word-entry {
+    height: 75px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.nw-label,
+#new-word {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nw-label,
+.definition-label {
+    color: #fff;
+}
+
+.nw-label {
+    margin: 0px 20px 40px 20px;
+}
+
+#new-word {
+    margin-left: 180px;
+    width: 270px;
+}
+
+.definition-label {
+    margin: 0px 20px 40px 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#definition {
+    height: inherit;
+    vertical-align: middle;
+}
+
+#new-word,
+#definition {
+    border-radius: var(--radius);
+}
