@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-banner {
+    background: #dda25ee9;
+}
+
+header .main-nav {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 60%;
+    font-weight: 600;
+    height: 35px;
+}
+
+/* the width should be determined by a media query */
+.logininfo {
+    width: 32%;
+    text-align: right;
+    line-height: 35px;
+    height: 35px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.logininfo a {
+    color: #fff;
+    padding: 0.25em 1.25em;
+    margin: 0px 10px;
+    text-align: right;
+    border-radius: 3px;
+    line-height: 25px;
+}
+
+.logininfo a.login {
+    background-color: #606c38;
+}
+
+.logininfo a.signup {
+    background-color: #bc6c25;
+}
+
+.menu.hamburger {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+    padding-left: 20px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu.hamburger:hover>span.rows {
+    opacity: 1;
+}
+
+.menu.hamburger>span.rows {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    width: 16px;
+    margin-top: -2px;
+    height: 3px;
+    border-radius: 2px;
+    background: #000;
+    transition: all .3s;
+}
+
+.menu.hamburger>span.rows::before {
+    top: -6px;
+}
+
+.menu.hamburger>span.rows::after {
+    top: 6px;
+}
+
+.menu.hamburger>span.rows:before,
+.menu.hamburger>span.rows:after {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 2px;
+    background-color: #000;
+    content: "";
+    transition: all .3s;
+}
+
+.menu.hamburger:hover {
+    background-color: #606c38;
+}
+
+.logininfo a.login:hover,
+.logininfo a.signup:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.tabs {
+    text-align: center;
+}
+
+
+.tab {
+    height: 20px;
+    margin: 20px;
+    font-size: smaller;
+    display: inline-block;
+    line-height: 10px;
+    text-align: center;
+    width: 15%;
+}
+
+.tab a {
+    color: #606c38;
+}
