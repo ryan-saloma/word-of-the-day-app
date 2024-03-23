@@ -4,41 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled Vocab App</title>
+    <title>Untitled</title>
     <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body class="top-section-home home with-light-header loggedout">
     <header>
-        <div class="header-banner" role="banner">
-            <nav class="main-nav">
-                <a class="logo" href="/home.html">Untitled Vocab App</a>
-                <div class="logininfo">
-                    <a class="login" href="/login">Login</a>
-                    <a class="signup" href="/signup">Sign Up</a>
-                </div>
+        <navbar class="home-nav nav sticky">
+            <ul class="nav-list">
+                <li class="logo nav-item">
+                    <a href="home.html">Untitled</a>
+                </li>
+                <li title="Use flashcards to learn vocab" class="nav-item flashcards">
+                    <a href="flashcards.html">Flashcards</a>
+                </li>
+                <li title="Look at vocab lists" class="nav-item vocab-lists">
+                    <a href="lists.html">Vocab Lists</a>
+                </li>
+                <li title="Play vocab games" class="nav-item games">
+                    <a href="games.html">Games</a>
+                </li>
+                <li class="nav-item login">
+                    <button action="login.html" class="btn btn-primary">Login</a>
+                </li>
+                <li class="nav-item signup">
+                    <button action="signup.html" class="btn btn-secondary">Sign Up</a>
+                </li>
                 <button role="button" class="hamburger menu">
                     <span class="rows"></span>
                 </button>
-            </nav>
-            <nav class="tabs">
-                <ul>
-                    <li title="Use flashcards to learn vocab" class="tab learn-tab">
-                        <a href="flashcards.html">Flashcards</a>
-                    </li>
-                    <li title="Look at vocab lists" class="tab vocab-lists">
-                        <a href="lists.html">Vocab Lists</a>
-                    </li>
-                    <li title="Play vocab games" class="tab games-tab">
-                        <a href="games.html">Games</a>
-                    </li>
-                    <li title="Generate a random words" class="tab randgen-tab">
-                        <a href="wordgenerator.html">Word Generator</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            </ul>
+        </navbar>
     </header>
+    <section title="word of the day" class="wotd">
+
+    </section>
 
 </body>
 
