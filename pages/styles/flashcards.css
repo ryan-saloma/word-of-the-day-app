@@ -1,53 +1,86 @@
+.entry-section {
+    margin: 100px 50px 0px 50px;
+    width: calc(100% - 100px);
+}
+
 .new-flashcard-form {
-    margin: 100px 0.25rem 0px;
-    background: var(--clr-primary);
+    background: #fff;
     border-radius: var(--radius);
     height: 200px;
-    width: calc(100% - 0.5rem);
 }
 
-.word-entry {
-    height: 75px;
+.flashcard {
+    height: 100%;
     width: 100%;
-    display: block;
-    position: relative;
 }
 
-.nw-label,
-#new-word {
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    vertical-align: middle;
+.entry-block,
+.label-block,
+.underline-block {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.nw-label,
-.definition-label {
-    color: #fff;
+.entry-block {
+    align-items: end;
 }
 
-.nw-label {
-    margin: 0px 20px 40px 20px;
+.label-block {
+    align-items: top;
 }
 
-#new-word {
-    margin-left: 180px;
-    width: 270px;
+.underline {
+    box-shadow: 0 0.125rem 0 0 var(--gray-700-gray-200);
+    height: 0.25rem;
+    width: 100%;
+    transition: all .12s cubic-bezier(.47, 0, .745, .715);
 }
 
-.definition-label {
-    margin: 0px 20px 40px 20px;
+.entry textarea {
+    color: var(--gray-700-gray-200);
+    padding: 10px 0px 10px 0px;
+    border: none;
+    width: 100%;
+    background-color: var(--clr-light-background);
+}
+
+.term-entry,
+.definition-entry {
+    padding: 10px;
+    width: 40%;
     text-align: center;
-    vertical-align: middle;
     display: inline-block;
 }
 
-#definition {
-    height: inherit;
-    vertical-align: middle;
+.nw-label,
+.definition-label {
+    width: 40%;
+    color: var(--gray-700-gray-200);
+    font-size: small;
 }
 
-#new-word,
-#definition {
+/* make this more specific */
+label {
+    text-align: center;
+}
+
+.add-row {
+    margin-top: 30px;
+    background: #fff;
     border-radius: var(--radius);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+}
+
+.add-btn button {
+    height: 50px;
+    width: 100px;
 }
