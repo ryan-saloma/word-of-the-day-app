@@ -1,1 +1,6 @@
-Add hover effect to login and sign up buttons.
+- Review event listeners in JS
+- Add basic functionality to add card button
+- Add banner above each flashcard form for deleting, etc.
+- Allow addition of images to flashcards
+- Allow the text area of the fields grow when text reaches end
+- Allow users to drag cards to reorder them
