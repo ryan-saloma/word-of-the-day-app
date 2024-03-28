@@ -7,6 +7,7 @@
     <title>Flashcards</title>
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/flashcards.css">
+    <script src="scripts/flashcards.js"></script>
 </head>
 
 <body>
@@ -37,17 +38,30 @@
             </ul>
         </navbar>
     </header>
-    <div class="new-flashcard-form form">
-        <form action="" method="" class="">
-            <div class="word-entry">
-                <label for="nw" class="label nw-label">Enter the word:</label>
-                <input type="text" name="nw" id="new-word">
+    <div class="entry-section">
+        <div class="new-flashcard-form form">
+            <div class="flashcard">
+                <div class="entry-block">
+                    <div class="entry term-entry">
+                        <textarea id="new-term" name="new-term" rows="1" placeholder=" Enter term"></textarea>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="entry definition-entry">
+                        <textarea id="definition" name="defintion" rows="1" placeholder=" Enter definition"></textarea>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="label-block"> <!-- this could be within the entry block, but I might want it later, tbd -->
+                    <label for="new-term" class="label nw-label">TERM</label>
+                    <label for="definition" class="definition-label label">DEFINITION</label>
+                </div>
             </div>
-            <div class="definition-entry">
-                <label for="definition" class="definition-label label">Enter the definition:</label>
-                <textarea id="definition" name="defintion" rows="5" cols="40"></textarea>
+        </div>
+        <div class="add-row">
+            <div class="add-btn">
+                <button aria-label="Add card" class="btn btn-addRow" type="button">+ Add Card</button>
             </div>
-        </form>
+        </div>
     </div>
 </body>
 
