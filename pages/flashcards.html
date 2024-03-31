@@ -38,55 +38,56 @@
         </navbar>
     </header>
     <div class="entry-section">
-        <div class="new-flashcard-form form">
+        <form id="flashcards" class="new-flashcard-form form" action="/pages/flashcards.html" method="post">
             <div class="create-nav">
                 <span class="">Create a new set</span>
-                <button type="submit" class="btn btn-create">Create</button>
+                <input type="submit" class="btn btn-create" value="Create" />
             </div>
             <div class="collection-info">
-                <textarea id="collection-title" name="collection-title" rows="1"
-                    placeholder=" Enter a title"></textarea>
+                <textarea id="collection-title" name="collection-title" rows="1" placeholder="Enter a title"></textarea>
                 <textarea id="collection-description" name="collection-description" rows="1"
-                    placeholder=" Enter a description..."></textarea>
+                    placeholder="Enter a description..."></textarea>
             </div>
             <div class="flashcard--visible">
                 <div class="entry-block">
                     <div class="entry term-entry">
-                        <textarea id="new-term" name="new-term" rows="1" placeholder=" Enter term"></textarea>
+                        <textarea class="term" id="term1" name="term1" rows="1" placeholder="Enter term"></textarea>
                         <div class="underline"></div>
                     </div>
                     <div class="entry definition-entry">
-                        <textarea id="definition" name="defintion" rows="1" placeholder=" Enter definition"></textarea>
+                        <textarea class="definition" id="definition1" name="defintion1" rows="1"
+                            placeholder="Enter definition"></textarea>
                         <div class="underline"></div>
                     </div>
                 </div>
                 <div class="label-block"> <!-- this could be within the entry block, but I might want it later, tbd -->
-                    <label for="new-term" class="label nw-label">TERM</label>
-                    <label for="definition" class="definition-label label">DEFINITION</label>
+                    <label for="term1" class="label nw-label">TERM</label>
+                    <label for="definition1" class="label definition-label">DEFINITION</label>
                 </div>
             </div>
             <div class="flashcard--hidden">
                 <div class="entry-block">
                     <div class="entry term-entry">
-                        <textarea id="new-term" name="new-term" rows="1" placeholder=" Enter term"></textarea>
+                        <textarea class="term" id="term2" name="term2" rows="1" placeholder="Enter term"></textarea>
                         <div class="underline"></div>
                     </div>
                     <div class="entry definition-entry">
-                        <textarea id="definition" name="defintion" rows="1" placeholder=" Enter definition"></textarea>
+                        <textarea class="definition" id="definition2" name="defintion2" rows="1"
+                            placeholder="Enter definition"></textarea>
                         <div class="underline"></div>
                     </div>
                 </div>
                 <div class="label-block">
-                    <label for="new-term" class="label nw-label">TERM</label>
-                    <label for="definition" class="definition-label label">DEFINITION</label>
+                    <label for="term2" class="label nw-label">TERM</label>
+                    <label for="definition2" class="label definition-label">DEFINITION</label>
                 </div>
-            </div>
+        </form>
+    </div>
+    <div class="add-row">
+        <div class="add-btn">
+            <button aria-label="Add card" class="btn btn-addRow" type="button">+ Add Card</button>
         </div>
-        <div class="add-row">
-            <div class="add-btn">
-                <button aria-label="Add card" class="btn btn-addRow" type="button">+ Add Card</button>
-            </div>
-        </div>
+    </div>
     </div>
     <script src="scripts/flashcards.js"></script>
 </body>
