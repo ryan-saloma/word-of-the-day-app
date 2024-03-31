@@ -16,6 +16,20 @@ body {
     height: 175px;
 }
 
+.collection-info {
+    background: #fff;
+    border-radius: var(--radius);
+    height: 100px;
+}
+
+#collection-title,
+#collection-description {
+    width: 80%;
+    background: var(--clr-light-background);
+    display: block;
+}
+
+
 .flashcard--visible {
     background: #fff;
     border-radius: var(--radius);
