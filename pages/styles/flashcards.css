@@ -92,6 +92,16 @@ body {
     display: inline-block;
 }
 
+.term-entry textarea,
+.definition-entry textarea {
+    outline: none;
+}
+
+.term-entry textarea:focus+.underline,
+.definition-entry textarea:focus+.underline {
+    box-shadow: 0 0.125rem 0 0 var(--clr-secondary-underline);
+}
+
 .nw-label,
 .definition-label {
     width: 40%;

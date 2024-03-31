@@ -17,3 +17,4 @@ addButton.addEventListener('click', function (event) {
     hiddenFlashcard = copiedFlashcard;
     flashcardContainer.appendChild(hiddenFlashcard);
 });
+
