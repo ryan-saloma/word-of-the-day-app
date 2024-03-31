@@ -39,7 +39,10 @@
     </header>
     <div class="entry-section">
         <div class="new-flashcard-form form">
-            <div class="flashcard">
+            <div class="collection-info">
+
+            </div>
+            <div class="flashcard--visible">
                 <div class="entry-block">
                     <div class="entry term-entry">
                         <textarea id="new-term" name="new-term" rows="1" placeholder=" Enter term"></textarea>
@@ -51,6 +54,22 @@
                     </div>
                 </div>
                 <div class="label-block"> <!-- this could be within the entry block, but I might want it later, tbd -->
+                    <label for="new-term" class="label nw-label">TERM</label>
+                    <label for="definition" class="definition-label label">DEFINITION</label>
+                </div>
+            </div>
+            <div class="flashcard--hidden">
+                <div class="entry-block">
+                    <div class="entry term-entry">
+                        <textarea id="new-term" name="new-term" rows="1" placeholder=" Enter term"></textarea>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="entry definition-entry">
+                        <textarea id="definition" name="defintion" rows="1" placeholder=" Enter definition"></textarea>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="label-block">
                     <label for="new-term" class="label nw-label">TERM</label>
                     <label for="definition" class="definition-label label">DEFINITION</label>
                 </div>
