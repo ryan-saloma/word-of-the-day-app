@@ -1,17 +1,31 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
 .entry-section {
     margin: 100px 50px 0px 50px;
     width: calc(100% - 100px);
+    height: 100%;
 }
 
 .new-flashcard-form {
-    background: #fff;
-    border-radius: var(--radius);
-    height: 200px;
+    height: 175px;
 }
 
-.flashcard {
-    height: 100%;
+.flashcard--visible {
+    background: #fff;
+    border-radius: var(--radius);
+    margin-top: 20px;
+    height: 155px;
     width: 100%;
+}
+
+.flashcard--hidden {
+    display: none;
 }
 
 .entry-block,
@@ -67,7 +81,6 @@ label {
 }
 
 .add-row {
-    margin-top: 30px;
     background: #fff;
     border-radius: var(--radius);
     height: 100px;
